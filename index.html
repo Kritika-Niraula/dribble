@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dribble UI design</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--css link-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!--jQuery link-->
+    <script
+      src="https://kit.fontawesome.com/0ecbe17838.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--font awesome link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <!--bootstrap CSS and javaScript-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Nunito:wght@700&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <!--google fonts-->
+  </head>
+  <body>
+    <div class="main">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="left-nav">
+            <div class="container">
+              <div class="logo">
+                <div class="d-flex">
+                  <img src="logo.png" class="logo-img" />
+                  <div class="logo-title">logip</div>
+                </div>
+              </div>
+              <!---end of logo-->
+
+              <div class="nav-menu">
+                <div class="nav-items">
+                  <div class="d-flex">
+                    <div class="nav-icon">
+                      <i class="fa-solid fa-house"></i>
+                    </div>
+                    <div class="nav-name">Home</div>
+                  </div>
+                </div>
+                <div class="nav-items">
+                  <div class="d-flex">
+                    <div class="nav-icon">
+                      <i class="fa-solid fa-bars-progress"></i>
+                    </div>
+                    <div class="nav-name">Projects</div>
+                    <div class="nav-plus">
+                      <i class="fa-solid fa-plus fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-items">
+                  <div class="d-flex">
+                    <div class="nav-icon" id="bold">
+                      <i class="fa-solid fa-list"></i>
+                    </div>
+                    <div class="nav-name" id="bold">Tasks</div>
+                    <div class="nav-plus" id="bold">
+                      <i class="fa-solid fa-plus fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-items">
+                  <div class="d-flex">
+                    <div class="nav-icon"><i class="fa-solid fa-user"></i></div>
+                    <div class="nav-name">Team</div>
+                  </div>
+                </div>
+                <div class="nav-items">
+                  <div class="d-flex">
+                    <div class="nav-icon"><i class="fa-solid fa-gear"></i></div>
+                    <div class="nav-name">Settings</div>
+                  </div>
+                </div>
+              </div>
+              <!---end of nav-menu---->
+
+              <div class="dialogue-box">
+                <div class="d-flex justify-content-center">
+                  <div class="pop-title">Upgrade to pro</div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <div class="text">Get 1 month free</div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <div class="unlock-text">
+                    <div class="container">and unlock</div>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <button class="upgrade">
+                    <div class="container">upgrade</div>
+                  </button>
+                </div>
+              </div>
+              <!----end of dialogue-box--->
+
+              <div class="left-footer">
+                <div class="left-footer-container">
+                  <div class="d-flex">
+                    <div class="footer-icon">
+                      <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div class="footer-text">Help & information</div>
+                  </div>
+                </div>
+                <div class="left-footer-container">
+                  <div class="d-flex">
+                    <div class="footer-icon">
+                      <i class="fa-solid fa-circle-minus"></i>
+                    </div>
+                    <div class="footer-text">Logout</div>
+                  </div>
+                </div>
+              </div>
+              <!--end of left-footer-->
+            </div>
+          </div>
+          <!---end of left-nav---->
+
+          <div class="center-content">
+            <div class="container">
+              <div class="center-content-header">
+                <div class="d-flex justify-content-between">
+                  <div class="center-title">
+                    <div class="title-text">Hello, Margaret</div>
+                    <div class="header-paragraph">
+                      Track team process here. You almost reach a goal!
+                    </div>
+                  </div>
+                  <div class="date">
+                    <div class="d-flex">
+                      <div class="date-text">16 may, 2023</div>
+                      <div class="calender">
+                        <div class="calender-icon">
+                          <i class="fa-regular fa-calendar-minus"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!----end of center-content-header-->
+              <div class="data-container">
+                <div class="d-flex justify-content-between">
+                  <div class="data-type" id="data-container-border">
+                    <div class="d-flex">
+                      <div class="data-icon">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                      </div>
+                      <div class="data-box">
+                        <div class="data-title">Finished</div>
+                        <div class="data-number">
+                          <div class="d-flex">
+                            <div class="number">18</div>
+                            <div class="number-text">
+                              <div class="d-flex">
+                                <div class="number-icon">
+                                  <i class="fa-solid fa-sort-down"></i>
+                                </div>
+                                <div class="task-data">+8 tasks</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!----------->
+                  <div class="border-box"></div>
+                  <!----------->
+                  <div class="data-type" id="data-container-border">
+                    <div class="d-flex">
+                      <div class="data-icon">
+                        <i class="fa-solid fa-stopwatch"></i>
+                      </div>
+                      <div class="data-box">
+                        <div class="data-title">Tracked</div>
+                        <div class="data-number">
+                          <div class="d-flex">
+                            <div class="number">31h</div>
+                            <div class="number-text" id="number-text-color">
+                              <div class="d-flex">
+                                <div class="number-icon icon-margin">
+                                  <i class="fa-solid fa-sort-up"></i>
+                                </div>
+                                <div class="task-data">-6 hours</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!----------->
+                  <div class="border-box"></div>
+                  <!----------->
+                  <div class="data-type">
+                    <div class="d-flex">
+                      <div class="data-icon">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                      </div>
+                      <div class="data-box">
+                        <div class="data-title">Efficiency</div>
+                        <div class="data-number">
+                          <div class="d-flex">
+                            <div class="number">93%</div>
+                            <div class="number-text">
+                              <div class="d-flex">
+                                <div class="number-icon">
+                                  <i class="fa-solid fa-sort-down"></i>
+                                </div>
+                                <div class="number-icon-plus">+</div>
+                                <div class="task-data">12%</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!----end of data-container------->
+
+              <div class="chart">
+                <div class="d-flex justify-content-between">
+                  <div class="chart-title">Performance</div>
+                  <div class="chart-date">
+                    <div class="container">
+                      01-07 May <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="graph-container">
+                  <canvas id="myChart"></canvas>
+                </div>
+                <!---end of chart-container-->
+
+                <div class="task">
+                  <div class="d-flex justify-content-between">
+                    <div class="task-heading">
+                      <div class="d-flex">
+                        <div class="chart-title">Current Task</div>
+                        <div class="task-border"></div>
+                        <div class="task-percentage">Done 30%</div>
+                      </div>
+                    </div>
+                    <div class="task-week">
+                      <div class="container">
+                        week <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!---end of task-->
+
+                <div class="task-report-box">
+                  <div class="task-report">
+                    <div class="d-flex justify-content-between">
+                      <div class="task-type">
+                        <div class="d-flex">
+                          <div class="task-icon">
+                            <i
+                              class="fa-brands fa-square-font-awesome-stroke"
+                            ></i>
+                          </div>
+                          <div class="task-title">
+                            Producct Review for U18 Market
+                          </div>
+                        </div>
+                      </div>
+                      <div class="task-title" id="title-width">
+                        <span class="progress-icon">●</span>In progress
+                      </div>
+                      <div class="task-time">
+                        <span class="task-time-icon"
+                          ><i class="fa-solid fa-clock"></i></span
+                        >4h
+                      </div>
+                      <div class="task-menu">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="task-report">
+                    <div class="d-flex justify-content-between">
+                      <div class="task-type">
+                        <div class="d-flex">
+                          <div class="task-icon" id="icon-bg">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="task-title">
+                            UX Research for Project portfolio
+                          </div>
+                        </div>
+                      </div>
+                      <div class="task-title" id="title-width">
+                        <span class="progress-icon hold-dot">●</span>On hold
+                      </div>
+                      <div class="task-time">
+                        <span class="task-time-icon"
+                          ><i class="fa-solid fa-clock"></i></span
+                        >8h
+                      </div>
+                      <div class="task-menu">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="task-report">
+                    <div class="d-flex justify-content-between">
+                      <div class="task-type">
+                        <div class="d-flex">
+                          <div class="task-icon" id="icon-bg-color">
+                            <i class="fa-regular fa-square-minus"></i>
+                          </div>
+                          <div class="task-title">
+                            App Design and Development
+                          </div>
+                        </div>
+                      </div>
+                      <div class="task-title" id="title-width">
+                        <span class="progress-icon done-dot">●</span>Done
+                      </div>
+                      <div class="task-time">
+                        <span class="task-time-icon"
+                          ><i class="fa-solid fa-clock"></i></span
+                        >32h
+                      </div>
+                      <div class="task-menu">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!---end of chart-container-->
+            </div>
+          </div>
+          <!---end of center-content---->
+          <div class="right-nav">
+            <div class="container">
+              <div class="profile">
+                <div class="profile-img">
+                  <img src="image.png" />
+                </div>
+                <div class="profile-online">
+                  <i class="fa-solid fa-circle"></i>
+                </div>
+                <div class="profile-name">Megan Norton</div>
+                <div class="profile-mail">@megnorton</div>
+                <div class="call-options">
+                  <div class="d-flex justify-content-center">
+                    <div class="call-icon">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="call-icon">
+                      <i class="fa-solid fa-video"></i>
+                    </div>
+                    <div class="call-icon">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!---end of profile--->
+              <div class="activity">
+                <div class="d-flex justify-content-between">
+                  <div class="left-border"></div>
+                  <div class="activity-text">Activity</div>
+                  <div class="right-border"></div>
+                </div>
+              </div>
+              <!----end of activity-->
+              <div class="chat-container">
+                <div class="user-box">
+                  <div class="d-flex justify-content-between">
+                    <div class="user-info">
+                      <div class="d-flex">
+                        <div class="user-image">
+                          <img src="user-1.jpg" />
+                          <div class="user-online">
+                            <i class="fa-solid fa-circle"></i>
+                          </div>
+                        </div>
+                        <div class="user-name-container">
+                          <div class="user-name">Flyod Miles</div>
+                          <div class="user-activity">
+                            Commented on
+                            <span class="comment">Stark project</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user-activity">10:50 AM</div>
+                  </div>
+                </div>
+                <!---end of user-box---->
+                <div class="chat-message">
+                  Hi! Next week we'll start a new project. I'll tell you all the
+                  details later
+                </div>
+                <div class="thumb-like">
+                  <i class="fa-solid fa-thumbs-up"></i>
+                </div>
+                <!---en dof chat-message-->
+                <div class="user-box">
+                  <div class="d-flex justify-content-between">
+                    <div class="user-info">
+                      <div class="d-flex">
+                        <div class="user-image">
+                          <img src="user-2.jpg" />
+                          <div class="user-online" id="online-active">
+                            <i class="fa-solid fa-circle"></i>
+                          </div>
+                        </div>
+                        <div class="user-name-container">
+                          <div class="user-name">Guy Hawkins</div>
+                          <div class="user-activity">
+                            Added a file to
+                            <span class="comment">7Heroes project</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user-activity">10:50 AM</div>
+                  </div>
+                </div>
+                <!---end of user-box---->
+                <div class="file-message">
+                  <div class="container file">
+                    <div class="d-flex justify-content-between">
+                      <div class="chat-file">
+                        <div class="d-flex">
+                          <div class="user-image">
+                            <img src="user-1.jpg" />
+                          </div>
+                          <div class="user-name-container">
+                            <div class="file-name">Homepage.fig</div>
+                            <div class="user-activity">13.4 mb</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="download-icon">
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!---end of file-message-->
+                <div class="user-box">
+                  <div class="d-flex justify-content-between">
+                    <div class="user-info">
+                      <div class="d-flex">
+                        <div class="user-image">
+                          <img src="user-3.jpg" />
+                          <div class="user-online">
+                            <i class="fa-solid fa-circle"></i>
+                          </div>
+                        </div>
+                        <div class="user-name-container">
+                          <div class="user-name">Kristin Watson</div>
+                          <div class="user-activity">
+                            Added a file to
+                            <span class="comment">7Heros project</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user-activity">10:50 AM</div>
+                  </div>
+                </div>
+                <!---end of user-box---->
+
+                <div class="message-container">
+                  <div class="d-flex justify-content-between">
+                    <div class="message-box">
+                      <div class="d-flex justify-content-between">
+                        <div class="emoji">
+                          <i class="fa-solid fa-paperclip"></i>
+                        </div>
+                        <div class="message">Type a message</div>
+                      </div>
+                    </div>
+                    <div class="emo-box">
+                      <div class="d-flex justify-content-between">
+                        <div class="emoji">
+                          <i class="fa-regular fa-face-smile"></i>
+                        </div>
+                        <div class="mic">
+                          <i class="fa-solid fa-microphone"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---end of right-nav-->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
